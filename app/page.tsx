@@ -1,0 +1,119 @@
+import Image from "next/image";
+
+const QUESTIONNAIRE_URL =
+  "https://docs.google.com/forms/d/170JbzdOUQ6I1fTj1xH3n8FwPwzA-5FFQ2vmz1U4kHOc/viewform";
+
+const MIRANDA_JULY_URL = "https://substack.com/@mirandajuly/p-187687708";
+
+export default function Home() {
+  return (
+    <div className="relative min-h-full overflow-x-hidden">
+      <div className="grain" aria-hidden />
+
+      <div className="grid min-h-screen lg:grid-cols-2">
+        <aside className="relative flex h-[46vh] lg:h-screen gap-4 flex-col items-center bg-[#9ee8b8] p-5 sm:p-7 lg:sticky lg:top-0  lg:w-full lg:p-10">
+          <div className="sticky top-0 min-h-0 w-full flex-1 flex flex-col justify-center">
+            <Image
+              src="/hero.png"
+              alt="Illustration of a face with ocean waves and red irises in the eyes, tears falling. Credited to Miki Kim."
+              fill
+              priority
+              className="object-contain object-center"
+              sizes="(min-width: 1024px) 50vw, 100vw"
+            />
+             <p className="shrink-0 absolute bottom-0 text-center font-[family-name:var(--font-newsreader)] text-[11px] tracking-wide text-ink/55 italic sm:text-xs">
+            Illustration credited to Miki Kim
+          </p>
+          </div>
+        </aside>
+
+        <main className="relative flex flex-col justify-center px-6 py-10 sm:px-12 lg:px-16 lg:py-20">
+          <p className="font-[family-name:var(--font-fraunces)] text-[11px] font-semibold tracking-[0.32em] text-ink/70 uppercase">
+            Hamilton, Ontario
+          </p>
+
+          <h1 className="mt-3 font-[family-name:var(--font-fraunces)] text-[clamp(2.6rem,7vw,5.4rem)] leading-[0.92] font-semibold tracking-[-0.03em] text-ink">
+            Beguiled
+            <br />
+            <em className="font-medium text-iris">Hamilton</em>
+          </h1>
+
+          <p className="mt-5 max-w-xl text-xl leading-snug text-ink/80 italic sm:text-2xl">
+            An in-depth dating service for one person at a time.
+          </p>
+
+          <div className="mt-8 h-px max-w-xl bg-ink/15" />
+
+          <article className="mt-8 max-w-xl space-y-5 text-[1.05rem] leading-[1.7] text-ink/90 sm:text-[1.12rem]">
+            <p>
+              Beguiled Hamilton is a project based on{" "}
+              <a
+                href={MIRANDA_JULY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-wave underline decoration-wave/40 underline-offset-4 transition-colors hover:text-iris hover:decoration-iris/50"
+              >
+                Miranda July&apos;s project
+              </a>{" "}
+              of the same name. Our goal is to help people searching for
+              relationships in Hamilton connect, and the project basically
+              functions like an in-depth dating service for one person at a
+              time.
+            </p>
+
+            <p>
+              Each month we&apos;ll feature one person looking for a
+              date/relationship/intimate connection: this is our Beguiler. That
+              person will have answered a (long!) questionnaire based on the one
+              Miranda July created, and their answers will be published here for
+              the world (ok well the people of Hamilton and whoever else finds
+              it) to see. And if you, dear reader, find yourself interested in
+              contacting our Beguiler – in other words, beguiled – you will fill
+              out the same questionnaire and we&apos;ll forward your submission
+              to them. Et voilà! A match is (maybe, hopefully) made! Any
+              potential suitor can also check a box to have their questionnaire
+              be made eligible for a future monthly profile, and thus will begin
+              a long and prosperous course of connection between the wonderful
+              humans of Hamilton — fingers crossed!
+            </p>
+
+            <p>
+              As we are just getting started, we are currently looking for our
+              debut Beguilers. So if you&apos;re interested in being one,
+              please fill out the questionnaire below. From there we&apos;ll
+              pick our first official Beguiler (or more than one, because it
+              will probably be really hard to choose), and our little
+              matchmaking experiment will begin!
+            </p>
+
+            <p>
+              Thank you for being here and trying this out! If you have any
+              questions, email us at{" "}
+              <a
+                href="mailto:beguiledhamilton@gmail.com"
+                className="text-wave underline decoration-wave/40 underline-offset-4 transition-colors hover:text-iris hover:decoration-iris/50"
+              >
+                beguiledhamilton@gmail.com
+              </a>
+              .
+            </p>
+          </article>
+
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+            <a
+              href={QUESTIONNAIRE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-iris px-7 py-3.5 font-[family-name:var(--font-fraunces)] text-lg font-semibold tracking-wide text-paper shadow-[4px_4px_0_0_#1a120e] transition-transform hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[3px_3px_0_0_#1a120e]"
+            >
+              Fill out the questionnaire
+            </a>
+            <p className="text-sm text-ink/60 italic">
+              Same form for Beguilers and the beguiled.
+            </p>
+          </div>
+        </main>
+      </div>
+    </div>
+  );
+}
