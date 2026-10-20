@@ -7,27 +7,26 @@ const MIRANDA_JULY_URL = "https://substack.com/@mirandajuly/p-187687708";
 
 export default function Home() {
   return (
-    <div className="relative min-h-full overflow-x-hidden">
+    <div className="relative min-h-full">
       <div className="grain" aria-hidden />
 
-      <div className="grid min-h-screen lg:grid-cols-2">
-        <aside className="relative flex h-[46vh] lg:h-screen gap-4 flex-col items-center bg-[#9ee8b8] p-5 sm:p-7 lg:sticky lg:top-0  lg:w-full lg:p-10">
-          <div className="sticky top-0 min-h-0 w-full flex-1 flex flex-col justify-center">
-            <Image
-              src="/hero.png"
-              alt="Illustration of a face with ocean waves and red irises in the eyes, tears falling. Credited to Miki Kim."
-              fill
-              priority
-              className="object-contain object-center"
-              sizes="(min-width: 1024px) 50vw, 100vw"
-            />
-             <p className="shrink-0 absolute bottom-0 text-center font-[family-name:var(--font-newsreader)] text-[11px] tracking-wide text-ink/55 italic sm:text-xs">
-            Illustration credited to Miki Kim
-          </p>
-          </div>
-        </aside>
+      <aside className="relative flex h-[46vh] flex-col items-center justify-center bg-[#9ee8b8] p-5 sm:p-6 lg:fixed lg:inset-y-0 lg:left-0 lg:h-screen lg:w-1/2 lg:p-10">
+        <div className="relative min-h-0 w-full flex-1">
+          <Image
+            src="/hero.png"
+            alt="Illustration of a face with ocean waves and red irises in the eyes, tears falling. Credited to Miki Kim."
+            fill
+            priority
+            className="object-contain object-center"
+            sizes="(min-width: 1024px) 50vw, 100vw"
+          />
+        </div>
+        <p className="mt-3 shrink-0 text-center font-[family-name:var(--font-newsreader)] text-[11px] tracking-wide text-ink/55 italic sm:text-xs">
+          Illustration credited to Miki Kim
+        </p>
+      </aside>
 
-        <main className="relative flex flex-col justify-center px-6 py-10 sm:px-12 lg:px-16 lg:py-20">
+      <main className="relative flex flex-col justify-center px-6 py-10 lg:ml-[50%] lg:min-h-screen lg:px-16 lg:py-20">
           <p className="font-[family-name:var(--font-fraunces)] text-[11px] font-semibold tracking-[0.32em] text-ink/70 uppercase">
             Hamilton, Ontario
           </p>
@@ -113,7 +112,6 @@ export default function Home() {
             </p>
           </div>
         </main>
-      </div>
     </div>
   );
 }
