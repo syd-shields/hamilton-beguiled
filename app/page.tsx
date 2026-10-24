@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const QUESTIONNAIRE_URL =
-  "https://docs.google.com/forms/d/170JbzdOUQ6I1fTj1xH3n8FwPwzA-5FFQ2vmz1U4kHOc/viewform";
+  "https://docs.google.com/forms/d/e/1FAIpQLSe9Cfti_Bd3qKMr4XG_JYdV-8ndQNde5PNWvqKGHgkdpQGB9Q/viewform?usp=dialog";
 
 const MIRANDA_JULY_URL = "https://substack.com/@mirandajuly/p-187687708";
 
@@ -45,7 +45,7 @@ export default function Home() {
 
           <article className="mt-8 max-w-xl space-y-5 text-[1.05rem] leading-[1.7] text-ink/90 sm:text-[1.12rem]">
             <p>
-              Beguiled Hamilton is a project based on{" "}
+              Beguiled Hamilton is an experiment based on{" "}
               <a
                 href={MIRANDA_JULY_URL}
                 target="_blank"
@@ -54,35 +54,39 @@ export default function Home() {
               >
                 Miranda July&apos;s project
               </a>{" "}
-              of the same name. Our goal is to help people searching for
-              relationships in Hamilton connect, and the project basically
-              functions like an in-depth dating service for one person at a
-              time.
+              of the same name. Our goal is to create connections between people
+              in Hamilton (and beyond), and it basically functions like an
+              in-depth dating service for one person at a time.
             </p>
 
             <p>
               Each month we&apos;ll feature one person looking for a
               date/relationship/intimate connection: this is our Beguiler. That
               person will have answered a (long!) questionnaire based on the one
-              Miranda July created, and their answers will be published here for
-              the world (ok well the people of Hamilton and whoever else finds
-              it) to see. And if you, dear reader, find yourself interested in
-              contacting our Beguiler – in other words, beguiled – you will fill
-              out the same questionnaire and we&apos;ll forward your submission
-              to them. Et voilà! A match is (maybe, hopefully) made! Any
-              potential suitor can also check a box to have their questionnaire
-              be made eligible for a future monthly profile, and thus will begin
-              a long and prosperous course of connection between the wonderful
-              humans of Hamilton — fingers crossed!
+              Miranda July created, and their answers will be published here.
+              And if you, dear reader, find yourself interested in contacting
+              our Beguiler{" "}
+              <span className="whitespace-nowrap">
+                – in other words, beguiled –
+              </span>{" "}
+              you will fill out the same questionnaire and we&apos;ll forward
+              your submission to them. Et voilà! A match is (maybe, hopefully)
+              made.
+            </p>
+
+            <p>
+              Any potential suitor can also check a box to have their
+              questionnaire be made eligible for a future monthly profile, and
+              thus will begin a long and prosperous course of connection between
+              the wonderful humans of Hamilton — fingers crossed!
             </p>
 
             <p>
               As we are just getting started, we are currently looking for our
-              debut Beguilers. So if you&apos;re interested in being one,
-              please fill out the questionnaire below. From there we&apos;ll
-              pick our first official Beguiler (or more than one, because it
-              will probably be really hard to choose), and our little
-              matchmaking experiment will begin!
+              debut Beguiler. So if you&apos;re interested in being one, please
+              fill out the questionnaire below. From there we&apos;ll pick our
+              first official Beguiler, and our little matchmaking experiment
+              will begin...
             </p>
 
             <p>
