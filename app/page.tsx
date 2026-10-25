@@ -3,6 +3,9 @@ import Image from "next/image";
 const QUESTIONNAIRE_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSe9Cfti_Bd3qKMr4XG_JYdV-8ndQNde5PNWvqKGHgkdpQGB9Q/viewform?usp=dialog";
 
+const MAILING_LIST_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSdNXL0WM5k1cws3vQSNm_ykj_VeEe_XPWqw7YYzS6dVjTa0XQ/viewform?usp=publish-editor";
+
 const MIRANDA_JULY_URL = "https://substack.com/@mirandajuly/p-187687708";
 
 export default function Home() {
@@ -115,6 +118,19 @@ export default function Home() {
               Same form for Beguilers and the beguiled.
             </p>
           </div>
+
+          <p className="mt-6 max-w-xl text-sm leading-relaxed text-ink/50">
+            Not sure you want to be a Beguiler but want us to keep you in the
+            loop when the first one goes up?{" "}
+            <a
+              href={MAILING_LIST_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ink/60 underline decoration-ink/20 underline-offset-4 transition-colors hover:text-iris hover:decoration-iris/40"
+            >
+              Join our mailing list!
+            </a>
+          </p>
         </main>
     </div>
   );
